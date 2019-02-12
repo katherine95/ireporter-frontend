@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/ab367a13a6e13c19ec8e/maintainability)](https://codeclimate.com/github/katherine95/ireporter-frontend/maintainability)
-
+[![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
 # ireporter-frontend
 iReporter is a web application that enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
 
@@ -14,10 +14,10 @@ iReporter is a web application that enables any/every citizen to bring any form 
 For development, you will only need Node.js installed on your environment and the node module `create-react-app` to generate a boilerplate version of a React application.
 
     $ node --version
-    v0.10.24
+    v8.10.0
 
     $ npm --version
-    1.3.21
+    3.5.2
 
 You will use npm to install the create-react-app command line interface (CLI) globally (-g).
 
