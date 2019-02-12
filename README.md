@@ -1,68 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Maintainability](https://api.codeclimate.com/v1/badges/ab367a13a6e13c19ec8e/maintainability)](https://codeclimate.com/github/katherine95/ireporter-frontend/maintainability)
+[![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+# ireporter-frontend
+iReporter is a web application that enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention.
 
-## Available Scripts
+**Usage**
 
-In the project directory, you can run:
+* On the browser, visit the following url :
+    
+     * [iReporter-frontend]()
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For development, you will only need Node.js installed on your environment and the node module `create-react-app` to generate a boilerplate version of a React application.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+    $ node --version
+    v8.10.0
 
-### `npm test`
+    $ npm --version
+    3.5.2
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will use npm to install the create-react-app command line interface (CLI) globally (-g).
 
-### `npm run build`
+    $ npm install -g create-react-app
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+Html5, CSS3, ES6, ReactJs 
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Application Features**
 
-### `npm run eject`
+* Create an incident record
+* Keep track of incident status
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A normal user can perform the following :
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Create an incident record
+* View his/her posted incidents
+* Edit and update an incident. 
+* Delete an incident.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+An admin user can perform the following :
 
-## Learn More
+* Update status of a posted incident record
+* View all incidents posted.
+* View a list of registered users. 
+* Make a normal user an admin.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How To Manually Test It:
 
-### Code Splitting
+  1. Clone this repository:
+  
+    `git clone https://github.com/katherine95/ireporter-frontend`
+   
+  2. Change the directory into the project directory:
+   
+    `cd ireporter-frontend`
+    
+  3. Checkout to `develop` branch:
+  
+    `git checkout develop`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+  4. Install project dependencies:
+  
+    `npm install`
 
-### Analyzing the Bundle Size
+  5. Start the server to run the app in the development mode.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    `npm start`
 
-### Making a Progressive Web App
+## Simple build for production
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+    $ npm run build
 
-### Advanced Configuration
+## Update sources
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Some packages usages might change so you should run `npm prune` & `npm install` often.
+A common way to update is by doing
 
-### Deployment
+    $ git pull
+    $ npm prune
+    $ npm install
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To run those 3 commands you can just do
 
-### `npm run build` fails to minify
+    $ npm run pull
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Static server with Livereload
+
+The app embed for development a static connect server with livereload plugged.
+So each time you start the app, you get automatic refresh in the browser whenever you update a file.
