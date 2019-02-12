@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import { Navbar } from './components/Navbar';
+import { Login } from './components/Login';
 
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
         <header>
         </header>
         <Navbar />
+        <Login />
       </div>
     );
   }
 }
-
-export default App;
