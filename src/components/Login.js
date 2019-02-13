@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { LoginForm } from './LoginForm';
 
 export class Login extends React.Component {
     constructor(props) {
@@ -36,26 +37,7 @@ export class Login extends React.Component {
             <div className="container">
                 <div className="left"></div>
                 <div className="right">
-                    <form onSubmit={this.handleSubmit} className="form">
-                        <label>
-                            Name:
-                            <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
-                        </label>
-                        <br />
-                        <label>
-                            Email:
-                            <input type="email" name="email" value={this.state.value} onChange={this.handleChange} />
-                        </label>
-                        <br />
-                        <label>
-                            <input name="rememberMe" type="checkbox" checked={this.state.rememberMe} onChange={this.handleChange} />Remember Me
-                        </label>
-                        <br />
-                        <button type="submit" value="Submit">Log In</button>
-                        <br />
-                        <br />
-                        <p>Create an account?</p><br /><button type="submit" value="Submit">Sign Up</button>
-                    </form>
+                    <LoginForm handleSubmit={this.handleSubmit} handleChange={this.handleChange} state={this.state}/>
                 </div>
             </div>
         </div>
